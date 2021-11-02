@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>ログイン</title>
-        <link rel="stylesheet" href="sadamoto.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="login.css">
+</head>
 
-    <body>
-        <div>
-            <!--<h1>ログイン</h1>-->
-        </div>
+<body>
+    <div>
+        <!--<h1>ログイン</h1>-->
+    </div>
 
-        <div>
-            <!--フォーム-->
-            <form name="login_form">
-                <div class="header">
-                    <h1 class="contact-title">ログイン</h1>
-                    <p>ID、Passwordをご入力の上、「認証」ボタンをクリックしてください。</p>
-                </div>
+    <div>
 
-                <div>
+        <!--フォーム-->
+        <form name="login_form">
+            <div class="header">
+                <h1 class="contact-title">ログイン</h1>
+                <p>ID、Passwordをご入力の上、「認証」ボタンをクリックしてください。</p>
+            </div>>
+            <div>
 
-                    <div class="idps">
-                        <div>
-                            <input type="id" name="id" placeholder="ID">
-                        </div>
-                        <br>
-                        <div>
-                            <input type="password" name="pass" placeholder="Password" onchange="nextPage()" style="margin-bottom: 50px;">
-
-                        </div>
-                        <div>
-                            <button type="button" onClick="nextPage();">認証</button>
-                        </div>
+                <div class="idps">
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
                     </div>
-                    
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+                    </div>
                 </div>
-                
-            </form>
 
-            <!--ログイン処理-->
-            <script language="JavaScript" type="text/javascript">
-                function nextPage() {
-                    id = document.login_form.id.value
-                    pwd = document.login_form.pass.value;
-                    location.href = id + pwd + ".html";
-                }
-            </script>
+            </div>
+            <button type="button" onClick="nextPage();">認証</button>
+        </form>
 
-        </div>
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                id = document.login_form.id.value
+                pwd = document.login_form.pass.value;
+                location.href = id + pwd + ".html";
+            }
+        </script>
 
-    </body>
+    </div>
+
+</body>
 
 </html>
