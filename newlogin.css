@@ -1,0 +1,87 @@
+body{
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 100px;
+    border-right-width: 60px;
+    padding-left: 270px;
+    padding-right: 200px;
+    height: 465px;
+    width: 700px;
+
+}
+h1{
+    width: 613px;
+}
+/*foamタグ内の文字や斜体の設定*/
+.contact-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.contact-form .item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+   
+}
+.contact-form .item .label {
+    float: left;
+    padding: 5px;
+    margin:0;
+}
+/*textボックス内の文字の薄さ、色の設定*/
+.contact-form .item ::placeholder {
+    color: #ccc;
+}
+.submit{
+    
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+
+
+
+}
+.rog{
+    text-align: center;
+}
+#man{
+    padding-top: 29px;
+    margin-top: 10px;
+    
+}
+form {
+    text-align: center;
+}
+li{
+    text-align: left;
+    font-size: 20px;
+}
+#name{
+    width: 770px;
+}
+#gender{
+    width: 500px;
+}
+#maill{
+    width: 584px;
+}
+#password{
+    width: 558px;
+}
+#bir{
+    width: 534px;
+}
+#tel{
+    width: 571px;
+}
