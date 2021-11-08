@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    background-color: azure;
+}
+
+.toggle{
+    position: relative;
+    left: 40px;
+    bottom: 170px;
+}
+
+.favorite {
+    float: left;
+}
