@@ -18,7 +18,7 @@ form{
   padding-left: 10px;
 }
 .inputs{
-  float: left;
+
   width:300px;
 }
 input[type="text"],input[type="email"]{
@@ -55,3 +55,23 @@ input[type="reset"]{
   padding: 10px 20px;
   margin: 0 5px;
 }
+ul li:nth-of-type(n+2){
+   display: none; 
+}
+.aaa {
+  display: inline-block; /* ここがポイント */
+  height: 80px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.aaa img {
+  height: 100%;
+}
+#photo01 img,#photo02 img,#photo03 img,#photo04 img {
+  height: 200px;
+  width: 300px;
+}
+.opinion{
+  margin-bottom: 5%;
+}
+

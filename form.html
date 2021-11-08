@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <p class="lead-form">詳細なプランを決定してください！！</p>
+
+<form>
+    <div class="item">
+        <label class="label">人数</label>
+        <input class="inputs" type="text" name="name" placeholder="人数を入力してください">
+    </div>
+      
+    <div class="item">
+        <label class="label">料理のコース</label>
+        <select class="inputs" name="cooking">
+            <option value="diamond">￥10000</option>
+            <option value="master">￥20000</option>
+            <option value="predator">￥30000</option>
+          </select>
+    </div>
+      
+    <div class="item">
+        <label class="label">ケーキ</label>
+        <input class="inputs" type="email" name="email" placeholder="ご要望があればお書きください">
+    </div>
+
+    <div class="item">
+        <label class="label">会場花の予算</label>
+        <select class="inputs" name="cooking">
+            <option value="otegoro">50000未満</option>
+            <option value="heiminn">50000～100000</option>
+            <option value="hugou">100000～150000</option>
+            <option value="daihugou">150000以上</option>
+        </select>
+        <input class="inputs" type="text" name="name" placeholder="その他ご要望があればお書きください">
+    </div>
+
+    <div class="item">
+        <label class="label">テーブルクロス（色）</label>
+        <input class="inputs" type="email" name="email" placeholder="ご要望があればお書きください">
+    </div>
+
+    <div class="item">
+        <label class="label">テーブルクロス（特徴）</label>
+        <input class="inputs" type="email" name="email" placeholder="ご要望があればお書きください">
+    </div>
+
+    <div class="item">
+        <label class="label">記念品</label>
+    </div>
+
+    <div>
+            <select id="selectPhoto">
+                <option value="photo01" selected="selected">花</option>
+                <option value="photo02">ぬいぐるみ</option>
+                <option value="photo03">お米</option>
+                <option value="photo04">お酒</option>
+            </select>
+            <ul>
+                <li id="photo01">
+                <img src="picture/weddingFlower.jpg" alt="花">
+                <p>大切な日に、大切なものを送ってみてはどうですか？</p>
+                </li>
+                <li id="photo02">
+                <img src="picture/weddingMascot.jpg" alt="ぬいぐるみ">
+                <p>生まれた体重と全く同じ重さのぬいぐるみを用意します！</p>
+                </li>
+                <li id="photo03">
+                <img src="picture/weddingRice.png" alt="お米">
+                <p>生まれた体重と全く同じ重さのお米を用意します！</p>
+                </li>
+                <li id="photo04">
+                <img src="picture/weddingliquor.jpg" alt="お酒">    
+                <p>ラベルに名前や顔写真、似顔絵を入れることができます！</p>
+                </li>
+            </ul>
+    </div>
+    <div class = "opinion">
+        <input class="inputs" type="text" name="name" placeholder="その他ご要望があればお書きください">
+    </div>
+      
+    <div class="item">
+        <label class="label">ご意見</label>
+        <textarea class="inputs"></textarea>
+    </div>
+    
+    <div class="btn-area">
+        <input type="submit" value="確定"><input type="reset" value="リセット">
+    </div>
+
+</form>
+<script>
+    $(function(){
+  $('#selectPhoto').change(function () {
+    //選択したoptionのvalueを取得
+    var val = $(this).val();
+    //先頭に#を付けてvalueの値をidに変換
+    var selectPhotoId = '#' + val;
+    //一度すべてのブロックを非表示にする
+    $('ul li').hide();
+    //選択したブロックのみを表示
+    $(selectPhotoId).show();
+  });
+});
+</script>
+
+
+ 
+ 
+
+
+</body>
+
+
+</html>
+
+
