@@ -16,16 +16,38 @@
         <label class="label">人数</label>
         <input class="inputs" type="text" name="name" placeholder="人数を入力してください">
     </div>
+
+
+
       
     <div class="item">
-        <label class="label">料理のコース</label>
-        <select class="inputs" name="cooking">
-            <option value="diamond">￥10000</option>
-            <option value="master">￥20000</option>
-            <option value="predator">￥30000</option>
-          </select>
-    </div>
-      
+        <label class="label">食事コース</label>
+
+        <select id="select_search">
+			<option value="0" selected="selected">価格を選択してください</option>
+			<option value="1">100000</option>
+			<option value="2">200000</option>			
+			<option value="3">300000</option>
+	</select>
+	<button class="select_btn" type="button">選択</button>
+        <div class="select_box">
+            <p class="select_title">選択された価格は</p>
+            <p class="select_txt_off">価格を選択して下さい</p>
+            <p class="select_txt1">アミューズ（小前菜）<img src="picture/smallAppetizar.jpg">
+                                 <a class="aaaa"> オードブル（前菜）</a>  <img src="picture/appetizar.jpg">
+                                　パン               <img src="picture/bread.jpg">
+                                  スープ、ポタージュ  <img src="picture/soup.jpg">
+                                  ボワニソン（魚料理）<img src="picture/poisson.jpg">
+                                  グラニテ・ソルベ    <img src="picture/graniteSorbet.jpg">
+                                  ヴィアンド（肉料理）<img src="picture/viand.jpg">
+                                  デゼール（デザート）<img src="picture/desale.jpg"></p>
+            <p class="select_txt2">20000<img src="picture/weddingMascot.jpg"> ご飯</p>
+            <p class="select_txt3">30000<img src="picture/weddingMascot.jpg"> ご飯２</p>
+        </div>
+
+
+
+
     <div class="item">
         <label class="label">ケーキ</label>
         <input class="inputs" type="email" name="email" placeholder="ご要望があればお書きください">
@@ -96,7 +118,9 @@
     </div>
 
 </form>
+
 <script>
+    // --記念品--
     $(function(){
   $('#selectPhoto').change(function () {
     //選択したoptionのvalueを取得
@@ -109,12 +133,27 @@
     $(selectPhotoId).show();
   });
 });
+
+// --料理コース選択--
+$(function() {
+	$(".select_btn").on('click', function() {
+		var data = $("#select_search").val();
+		$(".select_txt_off,.select_txt1,.select_txt2,.select_txt3").css({"display":"none"});
+        if(data == 0){
+			$(".select_txt_off").css({"display":"block"});
+		}else if(data == 1){
+			$(".select_txt1").eq(data - 1).css({"display":"block"});
+		}else if(data == 2){
+            $(".select_txt2").eq(data - 2).css({"display":"block"});
+        }else if(data == 3){
+            $(".select_txt3").eq(data - 3).css({"display":"block"});
+        }
+
+
+	});
+
+});
 </script>
-
-
- 
- 
-
 
 </body>
 

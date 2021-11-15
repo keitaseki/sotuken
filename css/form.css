@@ -8,7 +8,8 @@ form{
 }
 .item{
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  clear: left;
 }
 .label{
   float: left;
@@ -18,7 +19,7 @@ form{
   padding-left: 10px;
 }
 .inputs{
-
+  float: left;
   width:300px;
 }
 input[type="text"],input[type="email"]{
@@ -72,6 +73,78 @@ ul li:nth-of-type(n+2){
   width: 300px;
 }
 .opinion{
-  margin-bottom: 5%;
+  clear:both;
+  margin-bottom: 20%;
 }
+
+
+
+.select_form {
+	display: block;
+	position: relative;
+	margin: 0 0 15px;
+	padding: 0 120px 0 0;
+}
+#select_search {
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	font-size: 100%;
+	border: solid 1px #e1e1e1;
+	border-radius: 3px;
+}
+
+.select_box {
+	margin: 0;
+	padding: 10px;
+	background: #EFEFEF;
+  
+}
+.select_title {
+	margin: 0 0 7px;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	font-weight: bold;
+}
+.select_txt_off {
+	margin: 0;
+	padding: 13px 0;
+	background: #fff;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	border-radius: 3px;
+}
+.select_txt1,.select_txt2,.select_txt3{
+	display: none;
+	margin: 0;
+	padding: 13px 0;
+	background: #fff;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	font-weight: bold;
+	border-radius: 3px;
+}
+.select_txt1 img,.select_txt2 img,.select_txt3 img{
+  display: block;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+.aaaa{
+  text-align: center;
+  margin: 0; 
+	padding: 13px 0;
+
+}
+
+
+
+
 
