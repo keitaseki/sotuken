@@ -1,0 +1,27 @@
+.wrap{
+    
+    /*display: flex;*/
+    text-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 150px;
+
+}
+.box{
+    display:inline-block;
+    text-align: center;
+    background:rgba(163, 163, 163, 0.678);
+    width: 300px;
+    height:300px;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.box img {
+    position : relative;
+    top: 50px;
+}
