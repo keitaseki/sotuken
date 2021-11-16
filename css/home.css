@@ -1,25 +1,36 @@
 #usericon{
-    width: 10%;
-    height: 10%;
     display:flex;
-    margin-left: auto;
-    margin-right: auto;
+    width: 140px;
+    height: 123px;
+    top:10%;
+    left:0%;
 }
 
 #bellicon{
-    width: 10%;
-    height:10%;
     display:flex;
-    margin-left: auto;
-    margin-right: auto;
+    width: 75px;
+    height: 80px;
+    position: relative;
+    top:16%;
+    left :45%;
+
+  
     
 }
-header{
-    display:flex;
-    width: 100%;
+/* #timeline{
     margin-left: auto;
     margin-right: auto;
+} */
+header{
+    max-width : 1200px;
+    text-align: center;
+    display:flex;
+    width: 100%;
+    margin-left : 35%;
+
 }
+
+
 #icon{
     display:flex;
     width: 30%;
