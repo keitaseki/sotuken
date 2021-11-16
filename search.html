@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <div class="wrapper">
+      <div class="search-area">
+        <form>
+          <input type="text" id="search-text" placeholder="検索ワードを入力">
+        </form>
+        <div class="search-result">
+          <div class="search-result__hit-num"></div>
+          <div id="search-result__list"></div>
+        </div>
+      </div>
+    </div><!-- /.wrapper -->
+    <div id="column" class="column02">
+        <ul>
+          <li><a href="https://nishikiya-dress.com/"><img src="picture/noimage.jpg" /><p>にしきや<br>岡山店<br>〒700-0962　岡山市北区北長瀬表町1丁目3番12号<br>倉敷店<br>〒710-0045　倉敷市船倉町1287-4</p></a></li>
+          <li><a href=""><img src="picture/noimage.jpg" /><p>商品名</p><span>1,600円</span></a></li>
+          <li><a href=""><img src="picture/noimage.jpg" /><p>商品名</p><span>2,600円</span></a></li>
+          <li><a href=""><img src="picture/noimage.jpg" /><p>商品名</p><span>3,600円</span></a></li>
+          <li><a href=""><img src="picture/noimage.jpg" /><p>商品名</p><span>3,600円</span></a></li>
+          <li><a href=""><img src="picture/noimage.jpg" /><p>商品名</p><span>2,600円</span></a></li>
+        </ul>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script>$(function () {
+    searchWord = function(){
+      var searchResult,
+          searchText = $(this).val(), // 検索ボックスに入力された値
+          targetText,
+          hitNum;
+  
+      // 検索結果を格納するための配列を用意
+      searchResult = [];
+  
+      // 検索結果エリアの表示を空にする
+      $('#search-result__list').empty();
+      $('.search-result__hit-num').empty();
+  
+      // 検索ボックスに値が入ってる場合
+      if (searchText != '') {
+        $('.column02 li').each(function() {
+          targetText = $(this).text();
+  
+          // 検索対象となるリストに入力された文字列が存在するかどうかを判断
+          if (targetText.indexOf(searchText) != -1) {
+            // 存在する場合はそのリストのテキストを用意した配列に格納
+            searchResult.push(targetText);
+          }
+        });
+  
+        // 検索結果をページに出力
+        for (var i = 0; i < searchResult.length; i ++) {
+          $('<span>').text(searchResult[i]).appendTo('#search-result__list');
+        }
+  
+        // ヒットの件数をページに出力
+        hitNum = '<span>検索結果</span>：' + searchResult.length + '件見つかりました。';
+        $('.search-result__hit-num').append(hitNum);
+      }
+    };
+  
+    // searchWordの実行
+    $('#search-text').on('input', searchWord);
+  });</script>
+  </body>
+</html>
