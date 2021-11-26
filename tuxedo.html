@@ -8,33 +8,47 @@
 </head>
 
 <body>
-    <button onclick="location.href='./favorite.html' "　id = "favoritebtn">お気に入り</button>
-    <button onclick="location.href='./dress.html' "　id = "dressbtn">ドレス</button>
-    <button style = "background-color: rgb(155, 165, 155)" onclick="location.href='./tuxedo.html' "　id = "tuxedobtn">タキシード</button>
+    <div class = "selectbtn">
+    <a href='./favorite.html' class="btn btn-svg">
+        <svg>
+          <rect x="2" y="2" rx="0" fill="none" width=200 height="50"></rect>
+        </svg>
+        <span>favorite</span>
+    </a>
 
-    <div class="favorite">
-        <div class = "select1">
-            <input type="checkbox" class="toggle" style="transform:scale(2.0);">
-            <img src="picture/bell.png" alt="" id = "wedding" height = "200px" onclick="slideshow()">
-        </div>
+    <a href="./dress.html" class="btn btn-svg">
+        <svg>
+          <rect x="2" y="2" rx="0" fill="none" width=200 height="50"></rect>
+        </svg>
+        <span>dress</span>
+    </a>
 
-        <div class = "select2">
-            <input type="checkbox" class="toggle" style="transform:scale(2.0);">
-            <img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px" onclick="slideshow()">
-        </div>
-
-        <div class = "select3">
-            <input type="checkbox" class="toggle" style="transform:scale(2.0);">
-            <img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px" onclick="slideshow()">
-        </div>
-
-        
+    <a href='./tuxedo.html' class="btn btn-svg" style="background-color: #FFD7E4;">
+        <svg>
+          <rect x="2" y="2" rx="0" fill="none" width=200 height="50"></rect>
+        </svg>
+        <span>tuxedo</span>
+    </a>
     </div>
 
-    </div>
-    </div>
+    
 
-    <script src="home.js"></script>
+    <ul class="top-banner">
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+      <li><input type="checkbox" class="toggle" style="transform:scale(2.0);"><img src="picture/wedding.jpg" alt="" id = "wedding" height = "200px"><p>aaa</p></li>
+  </ul>
+
+  <script src="select.js"></script>
 </body>
 
 </html>
