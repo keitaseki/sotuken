@@ -1,0 +1,143 @@
+body{
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 100px;
+    border-right-width: 60px;
+    padding-left: 270px;
+    padding-right: 200px;
+    height: 465px;
+    width: 700px;
+
+}
+h1{
+    width: 613px;
+}
+/*foamタグ内の文字や斜体の設定*/
+.contact-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.contact-form .item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+   
+}
+.contact-form .item .label {
+    float: left;
+    padding: 5px;
+    margin:0;
+}
+/*textボックス内の文字の薄さ、色の設定*/
+.contact-form .item ::placeholder {
+    color: #ccc;
+}
+.submit{
+    
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+
+
+
+}
+.rog{
+    text-align: center;
+}
+#man{
+    padding-top: 29px;
+    margin-top: 10px;
+    
+}
+form {
+    text-align: center;
+}
+li{
+    text-align: left;
+    font-size: 20px;
+}
+#name{
+    width: 770px;
+}
+#gender{
+    width: 500px;
+}
+#maill{
+    width: 584px;
+}
+#password{
+    width: 558px;
+}
+#bir{
+    width: 534px;
+}
+#tel{
+    width: 571px;
+}
+
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+html,body {
+	font-size: 16px;	/*画面幅481px以上で閲覧した際の文字サイズ。ここを変更すると、他の文字サイズも連動します。※480px以下の指定箇所は下の方に別途あります。*/
+}
+body {
+	/*margin: 0px;
+	padding: 0px;*/
+	color: #999;	/*全体の文字色*/
+	font-family: "M PLUS Rounded 1c", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	line-height: 2;		/*行間*/
+	background: #fff;	/*背景色*/
+	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 1rem;font-weight: normal;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
+video {max-width: 100%;}
+iframe {width: 100%;}
+
+/*ヘッダーブロック*/
+header {
+	position: relative;
+	width: 100%;
+	height: 100px;	/*高さ*/
+}
+/*ヘッダーブロック（※トップページへの追加設定）*/
+.home header {
+	height: auto;	/*高さを自動に*/
+}
+/*ロゴ画像*/
+header #logo {
+	position: absolute;z-index: 1;
+	left: 40px;	/*左からの配置場所*/
+	top: 60px;	/*上からの配置場所*/
+	width: 20px;	/*幅*/
+}
+/*ロゴ画像（※トップページへの追加設定）*/
+form #logo {
+	top: 30px;	/*上からの配置場所*/
+	left: 30px;	/*左からの配置場所*/
+	width: 60px;	/*幅*/
+	top: 40px;	/*上からの配置場所*/
+}
+img{
+    margin-left: 190px;
+    border: none;
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
+}

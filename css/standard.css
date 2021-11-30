@@ -3,14 +3,14 @@ html {
   height: 100%;
   margin: 0 auto;
   letter-spacing: 2px;
-  font-size: 10px;
+  
 }
 
 /*固定する背景*/
 div {
   box-sizing: border-box;
   color: #FFF;
-  font-size: 5rem;
+  font-size: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,4 +65,7 @@ div {
 }
 .scrollbox6 {
   background-color: #666;
+}
+.box_text{
+  font-size: large;
 }

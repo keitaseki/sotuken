@@ -94,11 +94,11 @@
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #979292;
-    font-size: 12px;
+    font-size: 17px;
     text-align: center;
 }
 .retu_text{
-    font-size: 16px;
+    /*font-size: 16px;*/
     text-align: center;
 }
 .gyo2{
@@ -159,13 +159,13 @@ a.btn-gradient {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;/*rem算出をしやすくするために*/
+  /*font-size: 62.5%;rem算出をしやすくするために*/
 }
 
-.btn,
+/*.btn,
 a.btn,
 button.btn {
-  /*font-size: 1.6rem;*/
+  
   font-weight: 700;
   line-height: 1.5;
   position: relative;
@@ -184,4 +184,37 @@ button.btn {
   letter-spacing: 0.1em;
   color: #ecf0f3;
   border-radius: 0.5rem;
-}
+}*/
+
+.btn-brackets {
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+  }
+  .btn-brackets:hover {
+    color:#ff7f7f;
+  }
+  .btn-brackets:before, .btn-brackets:after {
+    position: absolute;
+    top: 0;
+    content:'';
+    width: 8px;
+    height: 100%;
+    display: inline-block;
+  }
+  .btn-brackets:before {
+    border-left: solid 1px #ff7f7f;
+    border-top: solid 1px #ff7f7f;
+    border-bottom: solid 1px #ff7f7f;
+    left: 0;
+  }
+  .btn-brackets:after {
+    content: '';
+    border-top: solid 1px #ff7f7f;
+    border-right: solid 1px #ff7f7f;
+    border-bottom: solid 1px #ff7f7f;
+    right: 0;
+  }
