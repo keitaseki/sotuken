@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="救世主/js/openclose.js"></script>
+    <script src="救世主/js/fixmenu_pagetop.js"></script>
+</head>
+
+<!--フォーム-->
+<header>
+    <h1 id="logo"><img src="images/logo.png" alt="Sample Gallery"></a></h1>
+</header>
+
+<body>
+    <div>
+        <!--<h1>ログイン</h1>-->
+    </div>
+
+    <div>
+
+        <form name="login_form">
+            <div class="header"><br><br>
+                <h1 class="contact-title">ログイン</h1>
+                <p>ID、Passwordをご入力の上、「認証」ボタンをクリックしてください。</p>
+            </div>
+            <div>
+
+                <div class="idps">
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+                    </div>
+                </div>
+
+            </div>
+            <button class="button" type="button" onClick="nextPage();">認証</button><br>
+            <a href="newlogin.html">新規登録画面</a>
+        </form>
+
+
+      
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                id = document.login_form.id.value
+                pwd = document.login_form.pass.value;
+                location.href = id + pwd + ".html";
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
