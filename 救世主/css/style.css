@@ -129,6 +129,7 @@ header #logo {
 }
 #menubar a {
 	text-decoration: none;
+	font-size: 30px;
 }
 /*メニューブロックの上に空ける余白*/
 #menubar ul {
@@ -456,9 +457,6 @@ header #logo {
 .pc {display:none;}
 
 }
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> origin/main
